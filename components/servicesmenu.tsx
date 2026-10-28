@@ -21,146 +21,240 @@ type ServiceSection = {
   rows: Service[];
 };
 
+
 const menSections: ServiceSection[] = [
   {
     id: "groom",
-    title: "Groom Makeovers",
+    title: "Groom Makeover Deals",
     image:
       "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=85&w=900",
     imageAlt: "Professional groom styling",
-    description: "Professional looks for your special day.",
+    description:
+      "Single-day wedding makeovers. Every makeover includes head wash, beard/shave, hair styling, and soft makeover.",
     priceLabels: ["Director", "Top Stylist", "Stylist"],
     rows: [
       {
         name: "Engagement Groom Makeover",
-        detail: "Head wash, beard, styling & soft makeover",
+        detail: "Head wash, beard/shave, hair styling & soft makeover",
         prices: ["20,000", "6,000", "4,000"],
       },
       {
         name: "Nikkah Groom Makeover",
-        detail: "A refined look for your Nikkah",
+        detail: "Head wash, beard/shave, hair styling & soft makeover",
         prices: ["20,000", "6,000", "4,000"],
       },
       {
-        name: "Barat / Walima Makeover",
-        detail: "Complete wedding-day grooming",
+        name: "Mehndi / Mayon Groom Makeover",
+        detail: "Head wash, beard/shave, hair styling & soft makeover",
+        prices: ["20,000", "6,000", "4,000"],
+      },
+      {
+        name: "Barat Groom Makeover",
+        detail: "Head wash, beard/shave, hair styling & soft makeover",
+        prices: ["20,000", "6,000", "4,000"],
+      },
+      {
+        name: "Walima Groom Makeover",
+        detail:
+          "Includes head wash, beard/shave, hair styling, soft makeover; cleansing/facial on demand",
         prices: ["20,000", "6,000", "4,000"],
       },
     ],
   },
   {
     id: "packages",
-    title: "Groom Packages",
+    title: "Groom & Party Packages",
     image:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=85&w=900",
-    imageAlt: "Men's grooming",
-    description: "Complete grooming experiences, tailored to you.",
+    imageAlt: "Men's grooming and styling",
+    description:
+      "Complete grooming packages for parties and wedding celebrations.",
     priceLabels: ["Price"],
     rows: [
       {
-        name: "1-Day Party Package",
+        name: "Men's Party Package (1 Day)",
         detail:
-          "Hair cut, beard, styling, head wash, massage, nail buffing & makeover",
+          "Hair cut, beard/shave, hair styling, head wash, face massage, nail buffing & makeover",
         prices: ["6,000"],
+      },
+      {
+        name: "Groom Services (1 Day)",
+        detail:
+          "Hair cut, beard/shave, hair styling, head wash, glow facial, basic manicure, basic pedicure & makeup",
+        prices: ["18,000"],
       },
       {
         name: "Groom Package (2 Days)",
         detail:
-          "Hair cut, glow facial, hair treatment, threading, manicure, pedicure & makeup",
+          "Both days include hair cut, beard/shave, styling, head wash, artistic glow facial, hair treatment, face wax/threading, executive manicure, executive pedicure & makeup",
         prices: ["22,000"],
       },
       {
-        name: "3-Day Ultimate Groom Package",
+        name: "Groom Package (3 Days)",
         detail:
-          "Three days of grooming, facials, hair treatments, massage & makeup",
+          "Day 1: Full grooming, artistic glow facial, hair treatment, manicure, pedicure & makeup. Day 2: Deep cleansing, beard trim/shave, hair treatment, back/head massage & makeup. Day 3: Face exfoliation, beard trim/shave, body massage, hair styling & makeup",
         prices: ["30,000"],
       },
     ],
   },
   {
+    id: "pre-services",
+    title: "Groom Pre-Services",
+    image:
+      "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=85&w=900",
+    imageAlt: "Professional men's haircut",
+    description:
+      "Pre-event grooming packages for a polished, well-groomed look.",
+    priceLabels: ["Price"],
+    rows: [
+      {
+        name: "Executive Groom Pre-Services Package",
+        detail:
+          "Top Stylist hair cut with head wash, beard/shave, face wax/threading, skin polish, hair polish, executive manicure/pedicure & 15-minute neck and shoulder massage",
+        prices: ["13,500"],
+      },
+      {
+        name: "Luxury Groom Pre-Services Package",
+        detail:
+          "Signature hair cut, beard/shave, face wax/threading, skin-type brightening facial, luxury spa manicure/pedicure, one-shade hair dye, beard dye, hair protein treatment & 15-minute relaxing body massage",
+        prices: ["20,000"],
+      },
+    ],
+  },
+  {
     id: "haircut",
-    title: "Hair Cut",
+    title: "Hair Cut & Styling",
     image:
       "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=85&w=900",
     imageAlt: "Precision men's haircut",
-    description: "Precision cuts. Individual style.",
+    description: "Precision cuts and styling for every occasion.",
     priceLabels: ["Price"],
     rows: [
       {
         name: "Signature Hair Cut",
-        detail: "Precision styling by senior master stylists",
+        detail: "Signature haircut and styling",
         prices: ["3,500"],
       },
       {
         name: "Styling / Basic Hair Cut",
-        detail: "A clean, everyday executive cut",
+        detail: "A clean, everyday haircut",
         prices: ["2,500"],
       },
       {
-        name: "Beard / Shave Trim",
-        detail: "Hot towel and razor contouring",
+        name: "Signature Hair Styling",
+        prices: ["1,200"],
+      },
+      {
+        name: "Basic Styling",
+        prices: ["2,500"],
+      },
+      {
+        name: "Iron Styling",
+        prices: ["1,000"],
+      },
+      {
+        name: "Messy Look Styling",
         prices: ["1,000"],
       },
     ],
   },
   {
-    id: "haircolor",
-    title: "Hair Color",
+    id: "skin",
+    title: "Skin, Facials & Hydra",
     image:
-      "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&q=85&w=900",
-    imageAlt: "Professional hair styling",
-    description: "Personalized color and restorative treatments.",
+      "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=85&w=900",
+    imageAlt: "Professional facial treatment",
+    description: "Facials and skin treatments tailored to your needs.",
     priceLabels: ["Price"],
     rows: [
       {
-        name: "Natural Hair Color Dye",
-        detail: "Color dye, senior cut, shave & lemon polisher mask",
-        prices: ["5,500"],
+        name: "Rice Facial",
+        prices: ["9,500"],
       },
       {
-        name: "Keratin / Botox Treatment",
-        detail: "Customized smoothing and hair repair treatment",
-        prices: ["4,900"],
+        name: "Coffee Facial",
+        prices: ["12,500"],
+      },
+      {
+        name: "Charcoal Facial",
+        prices: ["10,500"],
+      },
+      {
+        name: "Zafran Facial",
+        prices: ["7,500"],
+      },
+      {
+        name: "Luxury Hydra Skin Need (12 Steps)",
+        detail: "12-step Hydra skin treatment",
+        prices: ["7,000"],
+      },
+      {
+        name: "Hydra Facial (7 Steps)",
+        detail:
+          "Includes a 15-minute electric-chair relaxing massage",
+        prices: ["5,000"],
       },
     ],
   },
   {
-    id: "skin",
-    title: "Skin & Facials",
+    id: "manicure-pedicure",
+    title: "Manicure & Pedicure",
     image:
-      "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=85&w=900",
-    imageAlt: "Professional facial treatment",
-    description: "Specialist skin treatments and facial rituals.",
+      "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&q=85&w=900",
+    imageAlt: "Spa and grooming treatment",
+    description: "Choose from herbal, aloe vera, fruity and premium treatments.",
     priceLabels: ["Price"],
     rows: [
       {
-        name: "Luxury Hydra Facial MD",
-        detail: "12-step extraction, hydration & serum infusion",
-        prices: ["7,000"],
+        name: "Herbal Manicure / Pedicure",
+        prices: ["3,500"],
       },
       {
-        name: "Hydra Facial",
-        detail: "7 steps with a 15-minute relaxing chair massage",
-        prices: ["5,000"],
+        name: "Aloe Vera Manicure / Pedicure",
+        prices: ["3,650"],
       },
       {
-        name: "Zafran Facial",
-        detail: "Traditional saffron-inspired radiance treatment",
-        prices: ["7,500"],
+        name: "Fruity Manicure / Pedicure",
+        prices: ["2,500"],
       },
       {
-        name: "Charcoal Deep Cleanse Facial",
-        detail: "Deep cleansing for congested pores",
-        prices: ["10,500"],
+        name: "Premium Manicure / Pedicure",
+        prices: ["6,000"],
+      },
+    ],
+  },
+  {
+    id: "haircolor",
+    title: "Hair Deals & Treatments",
+    image:
+      "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&q=85&w=900",
+    imageAlt: "Professional hair coloring and treatment",
+    description:
+      "Special hair deals and customized smoothing and repair treatments.",
+    priceLabels: ["Price"],
+    rows: [
+      {
+        name: "Natural Hair Colour Deal (3-inch Hair)",
+        detail:
+          "All-in-one deal: natural hair colour dye, senior hair cut, shave or beard trim, shampoo, lemon polisher & sea mineral mask",
+        prices: ["5,500"],
       },
       {
-        name: "Coffee Glow Facial",
-        detail: "An energizing antioxidant facial treatment",
-        prices: ["12,500"],
+        name: "Keratin / Botox / Caviar / Keraplex",
+        detail:
+          "Customized hair treatment; top head price",
+        prices: ["2,500"],
+      },
+      {
+        name: "Brazilian Blow-Out / Coffee Premium Keratin / GK-Keratin",
+        detail:
+          "Customized hair treatment; full head price",
+        prices: ["4,900"],
       },
     ],
   },
 ];
+
 
 const womenSections: ServiceSection[] = [
   {
