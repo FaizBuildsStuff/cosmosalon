@@ -256,12 +256,12 @@ export default function AppointmentSection() {
               </div>
             </div>
 
-            <div className="rounded-[24px] border border-white/60 bg-white/95 p-5 shadow-2xl shadow-black/15 backdrop-blur-xl sm:p-7">
+            <div className="rounded-[24px] border border-white/60 bg-white/95 p-5 shadow-2xl shadow-black/15 backdrop-blur-xl sm:p-7 flex flex-col justify-between min-h-[520px]">
               {confirmed ? (
                 <motion.div
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="flex min-h-[350px] flex-col items-center justify-center text-center"
+                  className="flex min-h-[440px] flex-col items-center justify-center text-center"
                 >
                   <div className="flex h-14 w-14 items-center justify-center rounded-full bg-neutral-900 text-white">
                     <Check className="h-6 w-6" />
@@ -354,8 +354,8 @@ export default function AppointmentSection() {
                       initial={{ opacity: 0, y: 8 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -6 }}
-                      transition={{ duration: 0.2 }}
-                      className="mt-6 min-h-[270px]"
+                      transition={{ duration: 0.18 }}
+                      className="mt-5 h-[340px] overflow-y-auto pr-0.5"
                     >
                       {step === 0 && (
                         <div className="space-y-4">
@@ -503,7 +503,7 @@ export default function AppointmentSection() {
                           <RadioGroup
                             value={time}
                             onValueChange={(value) => setTime(value ?? "")}
-                            className="grid grid-cols-3 gap-2"
+                            className="grid grid-cols-3 sm:grid-cols-4 gap-2"
                           >
                             {times.map((item) => (
                               <div key={item}>
@@ -515,7 +515,7 @@ export default function AppointmentSection() {
 
                                 <Label
                                   htmlFor={`slot-${item}`}
-                                  className={`flex cursor-pointer items-center justify-center rounded-xl border px-2 py-3 text-xs transition-colors ${
+                                  className={`flex cursor-pointer items-center justify-center rounded-xl border px-1.5 py-2.5 text-xs transition-colors ${
                                     time === item
                                       ? "border-neutral-900 bg-neutral-900 text-white"
                                       : "border-neutral-200 hover:border-neutral-400"
@@ -674,13 +674,15 @@ export default function AppointmentSection() {
                     </motion.div>
                   </AnimatePresence>
 
-                  {error && (
-                    <p role="alert" className="mt-3 text-xs text-red-600">
-                      {error}
-                    </p>
-                  )}
+                  <div className="h-5 my-1 flex items-center">
+                    {error && (
+                      <p role="alert" className="text-xs font-medium text-red-600">
+                        {error}
+                      </p>
+                    )}
+                  </div>
 
-                  <div className="mt-5 flex items-center gap-3 border-t border-neutral-100 pt-5">
+                  <div className="mt-auto flex items-center gap-3 border-t border-neutral-100 pt-4">
                     {step > 0 ? (
                       <Button
                         variant="ghost"

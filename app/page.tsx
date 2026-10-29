@@ -11,6 +11,7 @@ import ClientReviews from "@/components/ClientReviews";
 import InstagramSection from "@/components/InstagramSection";
 import AboutUs from "@/components/about";
 import AppointmentSection from "@/components/AppointmentSection";
+import Footer from "@/components/Footer";
 
 const exconWeights = [
   { name: "Thin", weight: "font-thin", value: "100" },
@@ -73,6 +74,7 @@ export default function Home() {
       <InstagramSection />
       <AboutUs />
       <AppointmentSection />
+      <Footer />
     </>
   );
 }

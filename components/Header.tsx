@@ -185,16 +185,17 @@ export default function Header() {
           {/* Action CTA: Aceternity UI Magic Shimmer Button */}
           <div className="flex items-center gap-3">
             <Dialog open={isBookingOpen} onOpenChange={setIsBookingOpen}>
-              <DialogTrigger asChild>
-                {/* Aceternity UI Shimmer Button */}
-                <button className="relative inline-flex h-10 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                  <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#F59E0B_0%,#171717_50%,#F59E0B_100%)]" />
-                  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-neutral-950 px-5 text-xs font-medium text-white backdrop-blur-3xl tracking-[0.14em] uppercase transition duration-300 hover:bg-neutral-900 gap-2">
-                    <CalendarDays className="w-3.5 h-3.5 text-amber-400" />
-                    <span>Book Appointment</span>
-                  </span>
-                </button>
-              </DialogTrigger>
+              <DialogTrigger
+                render={
+                  <button className="relative inline-flex h-10 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                    <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#F59E0B_0%,#171717_50%,#F59E0B_100%)]" />
+                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-neutral-950 px-5 text-xs font-medium text-white backdrop-blur-3xl tracking-[0.14em] uppercase transition duration-300 hover:bg-neutral-900 gap-2">
+                      <CalendarDays className="w-3.5 h-3.5 text-amber-400" />
+                      <span>Book Appointment</span>
+                    </span>
+                  </button>
+                }
+              />
 
               <DialogContent className="sm:max-w-md bg-white border border-neutral-200 font-excon rounded-2xl shadow-2xl">
                 <DialogHeader>
@@ -224,11 +225,13 @@ export default function Header() {
             {/* Mobile Sheet Trigger */}
             <div className="lg:hidden">
               <Sheet>
-                <SheetTrigger asChild>
-                  <Button variant="outline" size="icon" className="h-9 w-9 border-neutral-200 text-neutral-950 rounded-full bg-neutral-50">
-                    <Menu className="w-4 h-4" />
-                  </Button>
-                </SheetTrigger>
+                <SheetTrigger
+                  render={
+                    <Button variant="outline" size="icon" className="h-9 w-9 border-neutral-200 text-neutral-950 rounded-full bg-neutral-50">
+                      <Menu className="w-4 h-4" />
+                    </Button>
+                  }
+                />
                 <SheetContent side="right" className="bg-white border-l border-neutral-200 w-80 font-excon">
                   <SheetHeader className="text-left border-b border-neutral-100 pb-4">
                     <SheetTitle className="font-excon font-semibold tracking-wider text-lg text-neutral-950">
