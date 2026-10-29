@@ -235,7 +235,7 @@ export default function AppointmentSection() {
             <div className="max-w-md py-2 text-white sm:py-8">
               <p className="mb-4 flex items-center gap-2 text-[10px] uppercase tracking-[0.22em] text-white/65">
                 <span className="h-px w-7 bg-white/60" />
-                The COSMO experience
+                COSMO Salon
               </p>
 
               <h3 className="max-w-sm text-4xl font-medium leading-[1.08] tracking-[-0.06em] sm:text-6xl">
@@ -252,7 +252,7 @@ export default function AppointmentSection() {
                 <div className="flex h-9 w-9 items-center justify-center rounded-full border border-white/25 bg-white/10 backdrop-blur">
                   <MapPin className="h-4 w-4" />
                 </div>
-                Four convenient locations in Lahore
+                Four locations in Lahore
               </div>
             </div>
 
