@@ -27,7 +27,7 @@ const menSections: ServiceSection[] = [
     id: "groom",
     title: "Groom Makeover Deals",
     image:
-      "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=85&w=900",
+      "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&q=85&w=900",
     imageAlt: "Professional groom styling",
     description:
       "Single-day wedding makeovers. Every makeover includes head wash, beard/shave, hair styling, and soft makeover.",
@@ -65,7 +65,7 @@ const menSections: ServiceSection[] = [
     id: "packages",
     title: "Groom & Party Packages",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=85&w=900",
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=85&w=900",
     imageAlt: "Men's grooming and styling",
     description:
       "Complete grooming packages for parties and wedding celebrations.",
@@ -101,7 +101,7 @@ const menSections: ServiceSection[] = [
     id: "pre-services",
     title: "Groom Pre-Services",
     image:
-      "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=85&w=900",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=85&w=900",
     imageAlt: "Professional men's haircut",
     description:
       "Pre-event grooming packages for a polished, well-groomed look.",
@@ -125,7 +125,7 @@ const menSections: ServiceSection[] = [
     id: "haircut",
     title: "Hair Cut & Styling",
     image:
-      "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=85&w=900",
+      "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&q=85&w=900",
     imageAlt: "Precision men's haircut",
     description: "Precision cuts and styling for every occasion.",
     priceLabels: ["Price"],
@@ -162,7 +162,7 @@ const menSections: ServiceSection[] = [
     id: "skin",
     title: "Skin, Facials & Hydra",
     image:
-      "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=85&w=900",
+      "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&q=85&w=900",
     imageAlt: "Professional facial treatment",
     description: "Facials and skin treatments tailored to your needs.",
     priceLabels: ["Price"],
@@ -200,7 +200,7 @@ const menSections: ServiceSection[] = [
     id: "manicure-pedicure",
     title: "Manicure & Pedicure",
     image:
-      "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&q=85&w=900",
+      "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&q=85&w=900",
     imageAlt: "Spa and grooming treatment",
     description: "Choose from herbal, aloe vera, fruity and premium treatments.",
     priceLabels: ["Price"],
@@ -261,7 +261,7 @@ const womenSections: ServiceSection[] = [
     id: "bridal",
     title: "Make-up & Bridals",
     image:
-      "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&q=85&w=900",
+      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=85&w=900",
     imageAlt: "Elegant bridal beauty and makeup",
     description: "Beautifully considered looks for every occasion.",
     priceLabels: ["Signature", "Senior", "Available"],
@@ -313,7 +313,7 @@ const womenSections: ServiceSection[] = [
     id: "prebridal",
     title: "Pre-Bridal Packages",
     image:
-      "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&q=85&w=900",
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=85&w=900",
     imageAlt: "Luxury beauty preparation",
     description: "Thoughtful care before your special day.",
     priceLabels: ["Price"],
@@ -336,7 +336,7 @@ const womenSections: ServiceSection[] = [
     id: "womenshair",
     title: "Hair Deals & Treatments",
     image:
-      "https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&q=85&w=900",
+      "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=85&w=900",
     imageAlt: "Women's hair styling",
     description: "Modern colour and smooth, polished finishes.",
     priceLabels: ["Price"],
@@ -379,7 +379,7 @@ const womenSections: ServiceSection[] = [
     id: "wax",
     title: "Wax Deals",
     image:
-      "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=85&w=900",
+      "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&q=85&w=900",
     imageAlt: "Professional salon care",
     description: "A considered selection of personal care services.",
     priceLabels: ["Price"],

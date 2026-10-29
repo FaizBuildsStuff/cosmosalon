@@ -18,27 +18,19 @@ export default function Footer() {
       <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#060606] via-[#060606]/85 to-transparent pointer-events-none" />
       <div className="absolute inset-0 z-0 bg-gradient-to-t from-[#060606] via-transparent to-[#060606]/60 pointer-events-none" />
 
-      {/* ----------------- iOS MINIMALIST CONTENT ----------------- */}
+      {/* ----------------- iOS MINIMALIST CONTENT (MONOCHROME LUXURY) ----------------- */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 pt-16 sm:pt-20 pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 pb-16 border-b border-white/10">
           
-          {/* Brand Column */}
+          {/* Brand Column - Pure COSMO Typography */}
           <div className="lg:col-span-5 space-y-5">
-            <Link href="/" className="inline-flex items-center gap-3.5 group">
-              {/* Premium Yellow "CS" Monogram Badge - Pure iOS Clean */}
-              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-neutral-900 border border-white/10 transition-colors duration-200 group-hover:border-white/25">
-                <span className="font-serif font-bold text-xl tracking-tight text-amber-400 select-none">
-                  CS
-                </span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-semibold tracking-[0.24em] text-white">
-                  COSMO
-                </span>
-                <span className="text-[9px] font-medium tracking-[0.4em] text-amber-400 uppercase">
-                  Luxury Salon · Lahore
-                </span>
-              </div>
+            <Link href="/" className="inline-flex flex-col group focus:outline-none">
+              <span className="text-2xl sm:text-3xl font-light tracking-[0.28em] text-white transition-opacity duration-200 group-hover:opacity-80">
+                COSMO
+              </span>
+              <span className="text-[9px] font-light tracking-[0.45em] text-neutral-400 uppercase -mt-0.5">
+                Salon · Lahore
+              </span>
             </Link>
 
             <p className="text-sm text-neutral-400 max-w-sm font-light leading-relaxed">
