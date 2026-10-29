@@ -7,6 +7,10 @@ import { useLenis } from "@/components/smooth-scroll";
 import Hero from "@/components/Hero";
 import Header from "@/components/Header";
 import ServicesMenu from "@/components/servicesmenu";
+import ClientReviews from "@/components/ClientReviews";
+import InstagramSection from "@/components/InstagramSection";
+import AboutUs from "@/components/about";
+import AppointmentSection from "@/components/AppointmentSection";
 
 const exconWeights = [
   { name: "Thin", weight: "font-thin", value: "100" },
@@ -65,6 +69,10 @@ export default function Home() {
       <Header />
       <Hero />
       <ServicesMenu />
+      <ClientReviews />
+      <InstagramSection />
+      <AboutUs />
+      <AppointmentSection />
     </>
   );
 }
