@@ -66,8 +66,13 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           
-          {/* Brand Logo - Minimalist Architectural Typography */}
+          {/* Brand Logo - "CS" in Yellow Premium + COSMO Typography */}
           <a href="#" className="flex items-center gap-3 group focus:outline-none">
+            <div className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-xl bg-neutral-900 border border-white/10 transition-colors duration-200 group-hover:border-amber-500/50">
+              <span className="font-serif font-bold text-lg sm:text-xl tracking-tight text-amber-400 select-none">
+                CS
+              </span>
+            </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-1.5">
                 <span className="text-xl sm:text-2xl font-excon font-semibold tracking-[0.24em] text-neutral-950 group-hover:text-amber-600 transition duration-300">
@@ -234,9 +239,16 @@ export default function Header() {
                 />
                 <SheetContent side="right" className="bg-white border-l border-neutral-200 w-80 font-excon">
                   <SheetHeader className="text-left border-b border-neutral-100 pb-4">
-                    <SheetTitle className="font-excon font-semibold tracking-wider text-lg text-neutral-950">
-                      COSMO SALON
-                    </SheetTitle>
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-neutral-900 border border-white/10">
+                        <span className="font-serif font-bold text-base tracking-tight text-amber-400 select-none">
+                          CS
+                        </span>
+                      </div>
+                      <SheetTitle className="font-excon font-semibold tracking-wider text-base text-neutral-950">
+                        COSMO SALON
+                      </SheetTitle>
+                    </div>
                   </SheetHeader>
                   <div className="py-6 space-y-4 text-sm font-medium tracking-wide text-neutral-800">
                     <a href="#" className="block hover:text-neutral-950 transition">Home</a>
