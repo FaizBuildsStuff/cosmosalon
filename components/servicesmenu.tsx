@@ -658,7 +658,70 @@ export default function ServicesMenu() {
           <h2 className="text-[clamp(2.8rem,8vw,5.5rem)] font-black leading-[0.88] tracking-[-0.075em]">
             {isWomen ? "Women's Menu" : "Men's Menu"}
           </h2>
+
+          {/* Mobile Menu Switcher Pill */}
+          <div className="flex md:hidden items-center justify-center mt-6">
+            <div className="inline-flex items-center p-1 rounded-full border border-neutral-300 bg-neutral-100/90 backdrop-blur-md">
+              <button
+                type="button"
+                onClick={() => isWomen && switchMenu()}
+                className={`px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider transition-all duration-200 ${
+                  !isWomen
+                    ? "bg-black text-white shadow-sm"
+                    : "text-neutral-600 hover:text-black"
+                }`}
+              >
+                Men's Menu
+              </button>
+              <button
+                type="button"
+                onClick={() => !isWomen && switchMenu()}
+                className={`px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider transition-all duration-200 ${
+                  isWomen
+                    ? "bg-black text-white shadow-sm"
+                    : "text-neutral-600 hover:text-black"
+                }`}
+              >
+                Women's Menu
+              </button>
+            </div>
+          </div>
         </motion.div>
+
+        {/* Mobile Sticky Bar: Category Pills + Arrow Menu Switch Button */}
+        <div className="md:hidden sticky top-[57px] z-30 -mx-5 px-5 py-2.5 bg-white/95 backdrop-blur-xl border-b border-neutral-200/80 shadow-xs mb-6">
+          <div className="flex items-center gap-2">
+            {/* Scrollable Categories */}
+            <div className="flex-1 overflow-x-auto no-scrollbar flex items-center gap-1.5 scroll-smooth py-0.5">
+              {sections.map((section) => (
+                <button
+                  key={section.id}
+                  type="button"
+                  onClick={() => {
+                    document.getElementById(section.id)?.scrollIntoView({
+                      behavior: reduceMotion ? "auto" : "smooth",
+                      block: "start",
+                    });
+                  }}
+                  className="shrink-0 px-3 py-1.5 rounded-full text-[11px] font-medium border border-neutral-200 bg-neutral-50 text-neutral-800 active:bg-black active:text-white transition-colors"
+                >
+                  {section.title}
+                </button>
+              ))}
+            </div>
+
+            {/* Mobile Arrow Switch Button */}
+            <button
+              type="button"
+              onClick={switchMenu}
+              aria-label={isWomen ? "Switch to Men's Menu" : "Switch to Women's Menu"}
+              className="shrink-0 flex h-8 items-center gap-1.5 px-3 rounded-full bg-black text-white text-[11px] font-semibold tracking-wider transition-transform active:scale-95 shadow-sm"
+            >
+              <span>{isWomen ? "Men" : "Women"}</span>
+              {isWomen ? <ArrowRight size={13} /> : <ArrowLeft size={13} />}
+            </button>
+          </div>
+        </div>
 
         {/* Main layout with a subtle menu switch */}
         <div className="relative grid grid-cols-1 gap-7 md:grid-cols-[105px_minmax(0,1fr)] lg:grid-cols-[145px_minmax(0,1fr)] lg:gap-8">
